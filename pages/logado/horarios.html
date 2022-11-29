@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/estilo.css">
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <link rel="stylesheet" href="../../assets/css/calendario.css">
 </head>
 
 <body>
+    <!--Menu do topo-->
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid justify-content-between d-flex">
@@ -64,7 +66,8 @@
             </div>
         </nav>
     </header>
-
+    <!-- Fechamento Menu do topo-->
+    <!--Menu de navegação-->
     <div class="container py-3">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -90,9 +93,10 @@
             </li>
         </ul>
     </div>
+    <!--Fechamento Menu navegação-->
 
     <section class="conteudo">
-        <h3> Nome(Matricula)</h3>
+        <h3 class="m-3"> Nome(Matricula)</h3>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -100,8 +104,8 @@
                         <li>Dados Gerais</li>
                     </ul>
                 </div>
+                <!-- Menu intermediario (Inativo)-->
                 <div class="col-md-6">
-
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a href="#" class="nav-link active">Dados Academicos</a>
@@ -114,7 +118,9 @@
                         </li>
                     </ul>
                 </div>
+                <!--Fechamento Menu intermediario (Inativo)-->
             </div>
+            <!-- Dados Pessoais -->
             <div class="row m-2">
                 <div class="col-md-3">
                     <img src="../../assets/img/Perfil_user.png" alt="">
@@ -162,24 +168,117 @@
                     </div>
                 </div>
             </div>
+            <!-- Fechamento Dados Pessoais -->
         </div>
+        <!-- Menu inferior -->
         <div class="row m-5">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a href="dadosacademicos.html" class="nav-link">Matricula</a>
                 </li>
                 <li class="nav-item">
-                    <a href="boletim.html" class="nav-link">Boletins</a>
+                    <a href="#" class="nav-link  active">Boletins</a>
                 </li>
                 <li class="nav-item">
                     <a href="TCC.html" class="nav-link">TCC/Relatorio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link  active">Locais e horarios de aula</a>
+                    <a href="horarios.html" class="nav-link">Locais e horarios de aula</a>
                 </li>
             </ul>
         </div>
+        <!-- Fechamento Menu Inferior -->
+        <div class="row m-5">
+            <ul>
+                <li>Filtros</li>
+            </ul>
+            <!-- Filtro Ano -->
+            <div class="row infor m-3">
+                <div class="col-md-12 ">
+                  <div class="col-md-6 d-flex ">
+                    <div class="offset-md-1 col-md-2 col-sm-2 ">
+                      <p class="fw-semibold text_infor">Ano:</p>
+                      <div class="dropdown ">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         2022
+                        </a>    
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">2022</a></li>
+                          <li><a class="dropdown-item" href="#">2021</a></li>
+                          <li><a class="dropdown-item" href="#">2020</a></li>
+                          <li><a class="dropdown-item" href="#">2019</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class=" enviar  mx-5 d-flex ">
+                      <button type="button" class=" btn btn-primary btn-sm moveeb">enviar</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">     
+                  </div>
+                </div>
+              </div>
+              <!-- Fechamento Filtro Ano -->
+            <ul>
+                <li>Horarios 2022/1</li>
+            </ul>
+            <!-- Tabela -->
+            <table class="table-responsive table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Segunda</th>
+                        <th scope="col">Terça</th>
+                        <th scope="col">Quarta</th>
+                        <th scope="col">Quinta</th>
+                        <th scope="col">Sexta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Biologia II</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>65</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Citologia</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Celulas</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Inglês</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Fechamento da Tabela -->
+        </div>
     </section>
+
+
+
+
+
+
+
+
     <footer>
         <div class="container-fluid marcador copyright py-3">
             <div class="row py-3 px-3">
@@ -231,6 +330,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>

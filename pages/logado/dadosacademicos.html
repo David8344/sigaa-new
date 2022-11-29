@@ -1,141 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SIGAA</title>
-        <link rel="icon" type="image" href="/assets/img/logo.png" />
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/assets/css/estilo.css">
-    </head>
-    <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid justify-content-between d-flex">
-              <div class=" row logo_nav fontes  fw-semibold  px-1">
-                <div class="col-4"><img src="../../assets/img/user-img.png" width="25px"></div>
-                <div class=" col-8 text-bg-dark border border-info">
-                  Username
 
-                </div>
-              </div>
-              <div class="asd fontes fw-bold" style="font-size: 35px;"><a href="index.html">UFRN</a></div>
-              <div class="botaoo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema Integrado de Gestão de <br> Atividades Acadêmicas</h6>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://sigaa.ufrn.br/sigaa/public/home.jsf">SIGAA</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://www.google.com/">Sair</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navbar-fixed-bottom disabled" href="#">09/10/2022</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <div class="container py-3">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Destaques</a>
-        </li>
-        <li class="nav-item">
-          <a href="calendario.html" class="nav-link">Calendário</a>
-        </li>
-        <li class="nav-item">
-          <a href="departamentos.html" class="nav-link">Departamentos</a>
-        </li>
-        <li class="nav-item">
-          <a href="acervo.html" class="nav-link">Acervo</a>
-        </li>
-        <li class="nav-item">
-          <a href="extensao.html" class="nav-link">Extensão</a>
-        </li>
-        <li class="nav-item">
-          <a href="cursos.html" class="nav-link">Cursos</a>
-        </li>
-        <li class="nav-item">
-          <a href="dadosacademicos.html" class="nav-link active">Dados pessoais</a>
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGAA</title>
+  <link rel="icon" type="image" href="/assets/img/logo.png" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/css/estilo.css">
+</head>
+<header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid justify-content-between d-flex">
+      <div class=" row logo_nav fontes  fw-semibold  px-1">
+        <div class="col-4"><img src="../../assets/img/user-img.png" width="25px"></div>
+        <div class=" col-8 text-bg-dark border border-info">
+          Username
+
+        </div>
+      </div>
+      <div class="asd fontes fw-bold" style="font-size: 35px;"><a href="index.html">UFRN</a></div>
+      <div class="botaoo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema Integrado de Gestão de <br> Atividades
+            Acadêmicas</h6>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://sigaa.ufrn.br/sigaa/public/home.jsf">SIGAA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/">Sair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-fixed-bottom disabled" href="#">09/10/2022</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
+</header>
+<div class="container py-3">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Destaques</a>
+    </li>
+    <li class="nav-item">
+      <a href="calendario.html" class="nav-link">Calendário</a>
+    </li>
+    <li class="nav-item">
+      <a href="departamentos.html" class="nav-link">Departamentos</a>
+    </li>
+    <li class="nav-item">
+      <a href="acervo.html" class="nav-link">Acervo</a>
+    </li>
+    <li class="nav-item">
+      <a href="extensao.html" class="nav-link">Extensão</a>
+    </li>
+    <li class="nav-item">
+      <a href="cursos.html" class="nav-link">Cursos</a>
+    </li>
+    <li class="nav-item">
+      <a href="dadosacademicos.html" class="nav-link active">Dados pessoais</a>
+    </li>
+  </ul>
+</div>
 
-    <section class="conteudo"></section>
+<section class="conteudo">
+  <h3> Nome(Matricula)</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li>Dados Gerais</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
 
-
-
-
-
-
-
-
-    <footer>
-        <div class="container-fluid marcador copyright py-3">
-            <div class="row py-3 px-3">
-                <div class="col-md-6 fw-bold">
-                    <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-                </div>
-            </div>
-            <div class="row px-3 fw-semibold">
-                <div class="col-md-6">
-                    <a href="">Acesse a Central de Ajuda</a>
-                </div>     
-            </div>
-            <div class="row px-3 texto_footer d-flex">
-                
-              <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                    <h6 class="fw-bold">Docentes</h6>
-                    <a href="">Acesse Paginas</a>
-                    <a href="">Consulte chefes</a>
-                    <a href="">Coordenadores</a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                  <h6 class="fw-bold">Especializados</h6>
-                  <a href="">Unidades</a>
-                  <a href="">Documentos</a>
-                  <a href="">Coordenadores</a>       
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                <h6 class="fw-bold">Sistema</h6>
-                <a href="">Diretores</a>
-                <a href="">Centros</a>
-                <a href="">Investidores</a>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Dados Academicos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Curiculo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Historico escolar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row m-2">
+      <div class="col-md-3">
+        <img src="" alt="">
+      </div>
+      <div class="col-md-3">
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Nome usual</p>
+          <li> adfd</li>
         </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                
-                </div>
-                <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-10 py-4 texto_footer fw-bold ">
-                    <a href="" class="px-1">Privacidade</a>
-                    <a href="" class="px-1">Acessibilidade</a>
-                    <a href="" class="px-1">Termos</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
-                    @ 2022 COG - Interprise System
-                </div>
-            </div>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Email</p>
+          <li> adfd</li>
         </div>
-    </footer>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Telefone</p>
+          <li> adfd</li>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Media Anual</p>
+          <li> adfd</li>
+        </div>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Email academico</p>
+          <li> adfd</li>
+        </div>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Telefone</p>
+          <li> adfd</li>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Curso</p>
+          <li> adfd</li>
+        </div>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Email para notifiações</p>
+          <li> adfd</li>
+        </div>
+        <div class="border-bottom border-dark mb-5 pb-3">
+          <p class="text-black-50">Telefone</p>
+          <li> adfd</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-5">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Matricula</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Boletins</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">TCC/Relatorio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Locais e horarios de aula</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row p-3 m-5">
+    <ul>
+      <li>Matriculas e periodos</li>
+    </ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Periodo</th>
+          <th scope="col">Ano letivo</th>
+          <th scope="col">Turma</th>
+          <th scope="col">Coordenador</th>
+          <th scope="col">Situação no periodo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">4</th>
+          <td>2022/1</td>
+          <td>2019118111</td>
+          <td>José Aruin</td>
+          <td>Matriculado</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>2021/1</td>
+          <td>2019118111</td>
+          <td>José Aruin</td>
+          <td>Aprovado</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>2020/1</td>
+          <td>2019118111</td>
+          <td>José Aruin</td>
+          <td>Aprovado</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>2019/1</td>
+          <td>2019118111</td>
+          <td>José Aruin</td>
+          <td>Aprovado</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Observações Gerais</li>
+    </ul>
+    <div class="row m-5">
+      !sem observações
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container-fluid marcador copyright py-3">
+    <div class="row py-3 px-3">
+      <div class="col-md-6 fw-bold">
+        <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+      </div>
+    </div>
+    <div class="row px-3 fw-semibold">
+      <div class="col-md-6">
+        <a href="">Acesse a Central de Ajuda</a>
+      </div>
+    </div>
+    <div class="row px-3 texto_footer d-flex">
+
+      <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+        <h6 class="fw-bold">Docentes</h6>
+        <a href="">Acesse Paginas</a>
+        <a href="">Consulte chefes</a>
+        <a href="">Coordenadores</a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+        <h6 class="fw-bold">Especializados</h6>
+        <a href="">Unidades</a>
+        <a href="">Documentos</a>
+        <a href="">Coordenadores</a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+        <h6 class="fw-bold">Sistema</h6>
+        <a href="">Diretores</a>
+        <a href="">Centros</a>
+        <a href="">Investidores</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-10 py-4 texto_footer fw-bold ">
+        <a href="" class="px-1">Privacidade</a>
+        <a href="" class="px-1">Acessibilidade</a>
+        <a href="" class="px-1">Termos</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
+        @ 2022 COG - Interprise System
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>

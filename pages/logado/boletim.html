@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGAA</title>
+    <link rel="icon" type="image" href="/assets/img/logo.png" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <link rel="stylesheet" href="../../assets/css/calendario.css">
+</head>
+
+<body>
+    <!--Menu do topo-->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid justify-content-between d-flex">
+                <div class=" row logo_nav fontes  fw-semibold  px-1">
+                    <div class="col-4"><img src="../../assets/img/user-img.png" width="25px"></div>
+                    <div class=" col-8 text-bg-dark border border-info">
+                        Username
+
+                    </div>
+                </div>
+                <div class="asd fontes fw-bold" style="font-size: 35px;"><a href="index.html">UFRN</a></div>
+                <div class="botaoo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema Integrado de Gestão de <br>
+                            Atividades
+                            Acadêmicas</h6>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sigaa.ufrn.br/sigaa/public/home.jsf">SIGAA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.google.com/">Sair</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-fixed-bottom disabled" href="#">09/10/2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fechamento Menu do topo-->
+    <!--Menu de navegação-->
+    <div class="container py-3">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Destaques</a>
+            </li>
+            <li class="nav-item">
+                <a href="calendario.html" class="nav-link">Calendário</a>
+            </li>
+            <li class="nav-item">
+                <a href="departamentos.html" class="nav-link">Departamentos</a>
+            </li>
+            <li class="nav-item">
+                <a href="acervo.html" class="nav-link">Acervo</a>
+            </li>
+            <li class="nav-item">
+                <a href="extensao.html" class="nav-link">Extensão</a>
+            </li>
+            <li class="nav-item">
+                <a href="cursos.html" class="nav-link">Cursos</a>
+            </li>
+            <li class="nav-item">
+                <a href="dadosacademicos.html" class="nav-link active">Dados pessoais</a>
+            </li>
+        </ul>
+    </div>
+    <!--Fechamento Menu navegação-->
+
+    <section class="conteudo">
+        <h3> Nome(Matricula)</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Dados Gerais</li>
+                    </ul>
+                </div>
+                <!-- Menu intermediario (Inativo)-->
+                <div class="col-md-6">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Dados Academicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Curiculo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Historico escolar</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Fechamento Menu intermediario (Inativo)-->
+            </div>
+            <!-- Dados Pessoais -->
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <img src="../../assets/img/Perfil_user.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Nome usual</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Email</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Telefone</p>
+                        <li> adfd</li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Media Anual</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Email academico</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Telefone</p>
+                        <li> adfd</li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Curso</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Email para notifiações</p>
+                        <li> adfd</li>
+                    </div>
+                    <div class="border-bottom border-dark mb-5 pb-3">
+                        <p class="text-black-50">Telefone</p>
+                        <li> adfd</li>
+                    </div>
+                </div>
+            </div>
+            <!-- Fechamento Dados Pessoais -->
+        </div>
+        <!-- Menu inferior -->
+        <div class="row m-5">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="dadosacademicos.html" class="nav-link active">Matricula</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link  active">Boletins</a>
+                </li>
+                <li class="nav-item">
+                    <a href="TCC.html" class="nav-link">TCC/Relatorio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="horarios.html" class="nav-link">Locais e horarios de aula</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Fechamento Menu Inferior -->
+        <div class="row m-5">
+            <ul>
+                <li>Filtros</li>
+            </ul>
+            <!-- Filtro Ano -->
+            <div class="row infor m-3">
+                <div class="col-md-12 ">
+                  <div class="col-md-6 d-flex ">
+                    <div class="offset-md-1 col-md-2 col-sm-2 ">
+                      <p class="fw-semibold text_infor">Ano:</p>
+                      <div class="dropdown ">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         2022
+                        </a>    
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">2022</a></li>
+                          <li><a class="dropdown-item" href="#">2021</a></li>
+                          <li><a class="dropdown-item" href="#">2020</a></li>
+                          <li><a class="dropdown-item" href="#">2019</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class=" enviar  mx-5 d-flex ">
+                      <button type="button" class=" btn btn-primary btn-sm moveeb">enviar</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">     
+                  </div>
+                </div>
+              </div>
+              <!-- Fechamento Filtro Ano -->
+            <ul>
+                <li>Boletim 2022/1</li>
+            </ul>
+            <!-- Tabela -->
+            <table class="table-responsive table">
+                <thead>
+                    <tr>
+                        <th scope="col">Materia</th>
+                        <th scope="col">Situação</th>
+                        <th scope="col">N1</th>
+                        <th scope="col">N2</th>
+                        <th scope="col">N3</th>
+                        <th scope="col">N4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Biologia II</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>65</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Citologia</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Celulas</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Inglês</th>
+                        <td>Cursando</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>70</td>
+                        <td>70</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Fechamento da Tabela -->
+            <ul>
+                <li>Graficos de desempenho</li>
+            </ul>
+            <!-- Graficos de desenpenho -->
+            <!-- Fechamento Graficos de desempenho-->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container-fluid marcador copyright py-3">
+            <div class="row py-3 px-3">
+                <div class="col-md-6 fw-bold">
+                    <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+                </div>
+            </div>
+            <div class="row px-3 fw-semibold">
+                <div class="col-md-6">
+                    <a href="">Acesse a Central de Ajuda</a>
+                </div>
+            </div>
+            <div class="row px-3 texto_footer d-flex">
+
+                <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+                    <h6 class="fw-bold">Docentes</h6>
+                    <a href="">Acesse Paginas</a>
+                    <a href="">Consulte chefes</a>
+                    <a href="">Coordenadores</a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+                    <h6 class="fw-bold">Especializados</h6>
+                    <a href="">Unidades</a>
+                    <a href="">Documentos</a>
+                    <a href="">Coordenadores</a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+                    <h6 class="fw-bold">Sistema</h6>
+                    <a href="">Diretores</a>
+                    <a href="">Centros</a>
+                    <a href="">Investidores</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-10 py-4 texto_footer fw-bold ">
+                    <a href="" class="px-1">Privacidade</a>
+                    <a href="" class="px-1">Acessibilidade</a>
+                    <a href="" class="px-1">Termos</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
+                    @ 2022 COG - Interprise System
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
